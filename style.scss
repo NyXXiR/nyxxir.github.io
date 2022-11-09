@@ -19,9 +19,10 @@ html {
 }
 
 body {
-	background: $white;
+	background: #E4E4E4;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  transition:0.3s;
 }
 
 .container {
@@ -214,9 +215,10 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 40px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
+  
 
   @include mobile {
     float: none;
@@ -275,15 +277,24 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  // border-top: 1px solid #ddd;
+  // border-bottom: 1px solid #ddd;
+  background-color: #1E1E1E;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
 }
+
+
+.night_day{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

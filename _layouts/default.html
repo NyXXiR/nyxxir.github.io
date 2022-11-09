@@ -122,9 +122,31 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/">Home</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
+          <input
+            class="night_day"
+            type="button"
+            value="night"
+            onclick="
+if(document.querySelector('.night_day').value === 'night'){
+document.querySelector('body').style.backgroundColor = '#1E1E1E';
+document.querySelector('body').style.color = '#E4E4E4';
+document.querySelector('.site-name').style.color = '#E4E4E4';
+document.querySelector('.site-description').style.color = '#E4E4E4';
+
+document.querySelector('.night_day').value = 'day';
+
+}else{
+document.querySelector('body').style.backgroundColor = '#E4E4E4';
+document.querySelector('body').style.color = '#1E1E1E';
+document.querySelector('.site-name').style.color = '$darkgray';
+document.querySelector('.site-description').style.color = 'black';
+document.querySelector('.night_day').value = 'night';
+}
+"
+          />
         </header>
       </div>
     </div>
