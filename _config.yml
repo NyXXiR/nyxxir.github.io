@@ -6,7 +6,7 @@
 name: N y X X i R
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: 코 딩 조 아
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://media.tenor.com/PBuvz9HAhUUAAAAi/pepe-smoke.gif
@@ -21,26 +21,27 @@ footer-links:
   email:
   facebook:
   flickr:
-  github: barryclark/jekyll-now
-  instagram:
+  github: NyXXiR/nyxxir.github.io
+  instagram: lgh0334
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus:
+  # anything in your profile username that comes after plus.google.com/
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: G-JCXX2FB11R
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://nyxxir.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

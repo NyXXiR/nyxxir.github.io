@@ -2,11 +2,12 @@
 .highlight {
   background-color: #202020;
   padding:10px;
-  
-border-radius:10px;
+  border-radius:10px;
   margin: 20px 0 20px 0;
-  overflow: hidden;
-  word-wrap:normal;
+  overflow:auto;
+  white-space: pre-wrap;
+  //word-wrap은 필요한지는 잘 모르겠는데 줄바꿈 하고 싶어서 white-space와 함께 추가하였음. 없어도 무방해 보임.
+  word-wrap: break-word;
 }
 
 code {
