@@ -149,7 +149,7 @@
 
   <script>
     const H1 = document.querySelectorAll(".post>h1");
-    console.log(document.querySelector("nav a"));
+    const NavItem = document.querySelectorAll("nav >a");
 
     function setNightDay() {
       if (document.querySelector(".night_day").value === "night") {
@@ -160,7 +160,9 @@
         H1.forEach(function setH1Color(h1) {
           h1.style.color = "#E4E4E4";
         });
-        document.querySelector("nav a").style.color = "#E4E4E4";
+        NavItem.forEach(function setNavColor(nav) {
+          nav.style.color = "#E4E4E4";
+        });
         document.querySelector(".night_day img").src =
           "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg";
 
@@ -173,7 +175,9 @@
         H1.forEach(function setH1Color(h1) {
           h1.style.color = "#1E1E1E";
         });
-        document.querySelector("nav a").style.color = "#4183C4";
+        NavItem.forEach(function setNavColor(nav) {
+          nav.style.color = "#4183C4";
+        });
         document.querySelector(".night_day img").src =
           "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
 
