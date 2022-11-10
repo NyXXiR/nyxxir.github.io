@@ -129,23 +129,8 @@
             class="night_day"
             type="button"
             value="night"
-            onclick="
-if(document.querySelector('.night_day').value === 'night'){
-document.querySelector('body').style.backgroundColor = '#1E1E1E';
-document.querySelector('body').style.color = '#E4E4E4';
-document.querySelector('.site-name').style.color = '#E4E4E4';
-document.querySelector('.site-description').style.color = '#E4E4E4';
-
-document.querySelector('.night_day').value = 'day';
-
-}else{
-document.querySelector('body').style.backgroundColor = '#E4E4E4';
-document.querySelector('body').style.color = '#1E1E1E';
-document.querySelector('.site-name').style.color = '$darkgray';
-document.querySelector('.site-description').style.color = 'black';
-document.querySelector('.night_day').value = 'night';
-}
-"
+            onclick="{setNightDay()}"
+            ;
           />
         </header>
       </div>
@@ -161,4 +146,31 @@ document.querySelector('.night_day').value = 'night';
 
     {% include analytics.html %}
   </body>
+
+  <script>
+    const H1 = document.querySelectorAll(".post>h1");
+
+    function setNightDay() {
+      if (document.querySelector(".night_day").value === "night") {
+        document.querySelector("body").style.backgroundColor = "#1E1E1E";
+        document.querySelector("body").style.color = "#E4E4E4";
+        document.querySelector(".site-name").style.color = "#E4E4E4";
+        document.querySelector(".site-description").style.color = "#E4E4E4";
+        H1.forEach(function setH1Color(h1) {
+          h1.style.color = "#E4E4E4";
+        });
+        document.querySelector(".night_day").value = "day";
+      } else {
+        document.querySelector("body").style.backgroundColor = "#E4E4E4";
+        document.querySelector("body").style.color = "#1E1E1E";
+        document.querySelector(".site-name").style.color = "#1E1E1E";
+        document.querySelector(".site-description").style.color = "black";
+        H1.forEach(function setH1Color(h1) {
+          h1.style.color = "#1E1E1E";
+        });
+
+        document.querySelector(".night_day").value = "night";
+      }
+    }
+  </script>
 </html>
