@@ -125,13 +125,12 @@
             <a href="{{ site.baseurl }}/">Home</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
-          <input
-            class="night_day"
-            type="button"
-            value="night"
-            onclick="{setNightDay()}"
-            ;
-          />
+          <button class="night_day" value="night" onclick="{setNightDay()}" ;>
+            <img
+              src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+              alt="err"
+            />
+          </button>
         </header>
       </div>
     </div>
@@ -149,6 +148,7 @@
 
   <script>
     const H1 = document.querySelectorAll(".post>h1");
+    console.log(document.querySelector("nav a"));
 
     function setNightDay() {
       if (document.querySelector(".night_day").value === "night") {
@@ -159,6 +159,10 @@
         H1.forEach(function setH1Color(h1) {
           h1.style.color = "#E4E4E4";
         });
+        document.querySelector("nav a").style.color = "#E4E4E4";
+        document.querySelector(".night_day img").src =
+          "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
+
         document.querySelector(".night_day").value = "day";
       } else {
         document.querySelector("body").style.backgroundColor = "#E4E4E4";
@@ -168,6 +172,9 @@
         H1.forEach(function setH1Color(h1) {
           h1.style.color = "#1E1E1E";
         });
+        document.querySelector("nav a").style.color = "#4183C4";
+        document.querySelector(".night_day img").src =
+          "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg";
 
         document.querySelector(".night_day").value = "night";
       }
