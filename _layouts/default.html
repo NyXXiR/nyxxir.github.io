@@ -148,7 +148,7 @@
   </body>
 
   <script>
-    const H1 = document.querySelectorAll(".post>h1");
+    const TitleColor = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
     const NavItem = document.querySelectorAll("nav >a");
 
     function setNightDay() {
@@ -157,8 +157,8 @@
         document.querySelector("body").style.color = "#E4E4E4";
         document.querySelector(".site-name").style.color = "#E4E4E4";
         document.querySelector(".site-description").style.color = "#E4E4E4";
-        H1.forEach(function setH1Color(h1) {
-          h1.style.color = "#E4E4E4";
+        TitleColor.forEach(function setTitleColor(title) {
+          title.style.color = "#E4E4E4";
         });
         NavItem.forEach(function setNavColor(nav) {
           nav.style.color = "#E4E4E4";
@@ -172,8 +172,8 @@
         document.querySelector("body").style.color = "#1E1E1E";
         document.querySelector(".site-name").style.color = "#1E1E1E";
         document.querySelector(".site-description").style.color = "black";
-        H1.forEach(function setH1Color(h1) {
-          h1.style.color = "#1E1E1E";
+        TitleColor.forEach(function setTitleColor(title) {
+          title.style.color = "#1E1E1E";
         });
         NavItem.forEach(function setNavColor(nav) {
           nav.style.color = "#4183C4";
