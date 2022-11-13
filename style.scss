@@ -13,16 +13,21 @@
 /* BASE RULES */
 /**************/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-size: 100%;
 }
 
 body {
-	background: #E4E4E4;
+  background: #e4e4e4;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
-  transition:0.3s;
+  transition: 0.3s;
 }
 
 .container {
@@ -32,7 +37,12 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
@@ -73,38 +83,55 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
+  cursor: pointer;
+  &:hover,
+  &:active {
     color: $blue;
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
 ul {
-  list-style-type: disc;
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  text-align: center;
 }
 
 ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -136,12 +163,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -153,7 +180,7 @@ img {
 //
 
 .wrapper-masthead {
-  width:auto;
+  width: auto;
   margin-bottom: 50px;
 }
 
@@ -171,7 +198,6 @@ img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
- 
 
   @include mobile {
     float: none;
@@ -219,7 +245,6 @@ nav {
   margin-top: 40px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-  
 
   @include mobile {
     float: none;
@@ -230,7 +255,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: "#4183C4";;
+    color: "#4183C4";
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -258,7 +283,7 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: 1.8em 0.8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
@@ -280,7 +305,7 @@ nav {
   margin-top: 50px;
   // border-top: 1px solid #ddd;
   // border-bottom: 1px solid #ddd;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 
 footer {
@@ -288,17 +313,17 @@ footer {
   text-align: center;
 }
 
-
-.night_day{
-
-background:none;
-border:0px;
-position:absolute;
-left:50%;
-transform:translateX(-50%);
-
+.night_day {
+  background: none;
+  border: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.night_day:hover {
+  cursor: pointer;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
