@@ -306,6 +306,7 @@ nav {
   // border-top: 1px solid #ddd;
   // border-bottom: 1px solid #ddd;
   background-color: #1e1e1e;
+
 }
 
 footer {
@@ -323,6 +324,10 @@ footer {
 
 .night_day:hover {
   cursor: pointer;
+}
+
+.categorized{
+  display:block;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

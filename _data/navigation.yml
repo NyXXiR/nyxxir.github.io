@@ -1,0 +1,15 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Java
+  link: /java.html
+- name: JavaScript
+  link: /javascript.html
+- name: ETC
+  link: /etc.html
+- name: Category
+  link: /category.html
+- name: Blog
+  link: /blog.html
+  

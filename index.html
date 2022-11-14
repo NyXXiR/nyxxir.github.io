@@ -7,7 +7,10 @@ layout: default
   <article class="post">
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-    <div class="entry">{{ post.excerpt }}</div>
+    <div class="entry">
+      <!-- truncate: 글자수 한정 / strip_newlines: 문단 끝나도 글자수 맞춰 읽어들임-->
+      {{post.excerpt | truncate: 70, '...' | strip_newlines}}
+    </div>
 
     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 보기</a>
   </article>
