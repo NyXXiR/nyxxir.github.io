@@ -1,5 +1,6 @@
 ---
 layout: category
 
-title: permalink: /etc/
+title: ETC
+permalink: /etc/
 ---
