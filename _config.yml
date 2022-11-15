@@ -72,6 +72,9 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
+#이걸 하면 각 페이지를 별개로 생성한다고 해서 만듬
+output: true
+
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
