@@ -139,6 +139,7 @@ img {
   max-width: 100%;
 }
 
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -322,6 +323,7 @@ footer {
   transform: translateX(-50%);
 }
 
+<<<<<<< Updated upstream
 .night_day:hover {
   cursor: pointer;
 }
@@ -329,6 +331,36 @@ footer {
 .categorized{
   display:block;
 }
+=======
+.night_day{
+
+background:none;
+border:0px;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+}
+
+.entry{
+  overflow: hidden;
+ 
+  word-break: break-word;
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+}
+
+// //만약 entry 내부 p의 글자수가 500자 이상이면 
+// overflow: hidden;
+// text-overflow: ellipsis;
+// word-break: break-word;
+// display: -webkit-box;
+// -webkit-line-clamp: 4;
+// -webkit-box-orient: vertical;
+// transition: 0.3s;
+
+// 에서 일부 속성을 없애면 될듯?
+>>>>>>> Stashed changes
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
