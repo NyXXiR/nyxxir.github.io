@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<!-- title: 대소문자 유의-->
+
 맨땅에 헤딩중
 
 ### More Information
