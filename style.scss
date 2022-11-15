@@ -184,14 +184,17 @@ img {
 .wrapper-masthead {
   width: auto;
   margin-bottom: 50px;
+  
 }
 
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+ 
 
   @include mobile {
     text-align: center;
+
   }
 }
 
@@ -340,6 +343,15 @@ footer {
 
   -webkit-box-orient: vertical;
 }
+
+
+// 여기에 저번에 만들었던 메뉴 내려오는 기능을 구현해야 함 1115-003
+.clear{
+  @include mobile{
+display:none;
+  }
+}
+
 
 // //만약 entry 내부 p의 글자수가 500자 이상이면 
 // overflow: hidden;
