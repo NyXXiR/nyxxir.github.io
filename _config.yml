@@ -18,7 +18,7 @@ avatar: https://media.tenor.com/PBuvz9HAhUUAAAAi/pepe-smoke.gif
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: lgh0334@gmail.com
   facebook:
   flickr:
   github: NyXXiR/nyxxir.github.io
@@ -37,6 +37,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+#현재 적용안됨. default.html에 넣었음
 google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)

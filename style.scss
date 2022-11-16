@@ -5,7 +5,6 @@
 // IMPORTS
 //
 
-
 @import "variables";
 @import "reset";
 // Syntax highlighting @import is at the bottom of this file
@@ -33,9 +32,11 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  //  초기 max-width 값 740px;
+  max-width: 1024px;
   padding: 0 10px;
   width: 100%;
+  clear: both;
 }
 
 h1,
@@ -103,6 +104,8 @@ ul {
   float: left;
   margin: 0;
   padding: 0;
+  //카테고리 페이지에서 post들 진열이 지랄나서 display:content를 추가하였음.
+  display: contents;
 }
 
 li {
@@ -139,7 +142,6 @@ b {
 img {
   max-width: 100%;
 }
-
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
@@ -192,7 +194,7 @@ img {
 
   @include mobile {
     text-align: center;
-    padding:50px;
+    padding: 50px;
   }
 }
 
@@ -248,14 +250,12 @@ nav {
   margin-top: 40px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
- 
+
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
-   
-    
   }
 
   a {
@@ -273,7 +273,7 @@ nav {
 }
 
 //
-// .main
+//.main
 //
 
 .posts > .post {
@@ -301,7 +301,8 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
+    //text-transform: uppercase; 였는데 삭제함
+
     font-size: 15px;
   }
 }
@@ -311,7 +312,6 @@ nav {
   // border-top: 1px solid #ddd;
   // border-bottom: 1px solid #ddd;
   background-color: #1e1e1e;
-
 }
 
 footer {
@@ -331,29 +331,26 @@ footer {
   cursor: pointer;
 }
 
-.categorized{
-  display:block;
+.categorized {
+  display: block;
 }
 
-.entry{
+.entry {
   overflow: hidden;
- 
+
   word-break: break-word;
   display: -webkit-box;
 
   -webkit-box-orient: vertical;
 }
 
-.current{
-color:red;
-
+.current {
+  color: red;
 }
 
 // 여기에 저번에 만들었던 메뉴 내려오는 기능을 구현해야 함 1115
 
-
-
-// //만약 entry 내부 p의 글자수가 500자 이상이면 
+// //만약 entry 내부 p의 글자수가 500자 이상이면
 // overflow: hidden;
 // text-overflow: ellipsis;
 // word-break: break-word;

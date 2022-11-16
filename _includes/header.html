@@ -1,0 +1,25 @@
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <a href="{{ site.baseurl }}/" class="site-avatar"
+        ><img src="{{ site.avatar }}"
+      /></a>
+
+      <div class="site-info">
+        <h1 class="site-name">
+          <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+        </h1>
+        <p class="site-description">{{ site.description }}</p>
+      </div>
+
+      {% include navigation.html %}
+      <button class="night_day" value="night" onclick="{setNightDay()}" ;>
+        <img
+          src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg"
+          ;
+          alt="err"
+        />
+      </button>
+    </header>
+  </div>
+</div>

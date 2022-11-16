@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<h1>{{ page.title }}</h1>
+
 <ul class="posts-list">
   {% assign category = page.category | default: page.title %} {% for post in
   site.categories[category] %}
@@ -11,16 +13,9 @@ layout: default
 
       <div class="entry">{{ content }}</div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-        {{post.excerpt | truncate: 50, '...' }}</a
-      >
+      <div>{{post.excerpt | truncate: 70, '...' | strip_newlines}}</div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 보기</a>
     </article>
   </li>
   {% endfor %}
 </ul>
-
-<!--기존 url-->
-<h3>
-  <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
-  <!-- <small>{{ post.date | date_to_string }}</small> -->
-</h3>

@@ -25,75 +25,78 @@
     />
 
     <!--added favicon-->
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      href="{{ site.baseurl }}/asset/images/favicon/favicon.ico"
+    />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="/images/favicon/apple-icon-57x57.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="/images/favicon/apple-icon-60x60.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="/images/favicon/apple-icon-72x72.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="/images/favicon/apple-icon-76x76.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="/images/favicon/apple-icon-114x114.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="/images/favicon/apple-icon-120x120.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="/images/favicon/apple-icon-144x144.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="/images/favicon/apple-icon-152x152.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/images/favicon/apple-icon-180x180.png"
+      href="{{ site.baseurl }}/assets/images/favicon/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/images/favicon/android-icon-192x192.png"
+      href="{{ site.baseurl }}/assets/images/favicon/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/favicon/favicon-32x32.png"
+      href="{{ site.baseurl }}/assets/images/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="/images/favicon/favicon-96x96.png"
+      href="{{ site.baseurl }}/assets/images/favicon/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/images/favicon/favicon-16x16.png"
+      href="{{ site.baseurl }}/assets/images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/images/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
@@ -121,41 +124,11 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"
-            ><img src="{{ site.avatar }}"
-          /></a>
-
-          <div class="site-info">
-            <h1 class="site-name">
-              <a href="{{ site.baseurl }}/">{{ site.name }}</a>
-            </h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          {% include navigation.html %}
-          <button class="night_day" value="night" onclick="{setNightDay()}" ;>
-            <img
-              src="https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg"
-              ;
-              alt="err"
-            />
-          </button>
-        </header>
-      </div>
-    </div>
+    {% include header.html %}
 
     <div id="main" role="main" class="container">{{ content }}</div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">{% include svg-icons.html %}</footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
+    {% include footer.html %} {% include analytics.html %}
   </body>
 
   <script>
