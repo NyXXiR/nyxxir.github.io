@@ -11,7 +11,11 @@ layout: default
     <article class="post">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="entry">{{ content }}</div>
+      <div class="entry">
+        {% if post.featured-image %}{% include post-featured-image.html
+        image=post.featured-image alt=post.featured-image-alt %}{% endif %}{{
+        content }}
+      </div>
 
       <div>{{post.excerpt | truncate: 70, '...' | strip_newlines}}</div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 보기</a>

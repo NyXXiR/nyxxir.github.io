@@ -2,6 +2,7 @@
 layout: post
 title: test
 categories: etc
+featured-image:
 tags:
 ---
 

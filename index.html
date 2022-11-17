@@ -9,7 +9,9 @@ layout: default
 
     <div class="entry">
       <!-- truncate: 글자수 한정 / strip_newlines: 문단 끝나도 글자수 맞춰 읽어들임-->
-      {{post.excerpt | truncate: 70, '...' | strip_newlines}}
+      {% if post.featured-image %}{% include post-featured-image.html
+      image=post.featured-image alt=post.featured-image-alt %}{% endif
+      %}{{post.excerpt | truncate: 70, '...' | strip_newlines}}
     </div>
 
     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 보기</a>

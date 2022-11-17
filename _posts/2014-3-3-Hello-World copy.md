@@ -2,6 +2,7 @@
 layout: post
 title: You're up and running!
 categories: etc
+featured-image: config.png
 tags:
 ---
 
