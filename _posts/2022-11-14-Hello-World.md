@@ -2,7 +2,7 @@
 layout: post
 title: test
 categories: etc
-featured-image:
+featured-image: KakaoTalk_20230513_173706636.jpg
 tags:
 ---
 
